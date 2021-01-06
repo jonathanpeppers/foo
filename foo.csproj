@@ -1,20 +1,5 @@
-<Project Sdk="MSBuild.Sdk.Extras">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>monoandroid11.0;net6.0-android</TargetFrameworks>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'monoandroid11.0' ">
-    <!-- Default Resource file inclusion -->
-    <!-- https://developer.android.com/guide/topics/resources/providing-resources -->
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\*\*.xml" />
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\*\*.axml" />
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\*\*.png" />
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\*\*.jpg" />
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\*\*.gif" />
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\font\*.ttf" />
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\font\*.otf" />
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\font\*.ttc" />
-    <AndroidResource Include="$(MonoAndroidResourcePrefix)\raw\*" Exclude="$(MonoAndroidResourcePrefix)\raw\.*" />
-    <!-- Default Asset file inclusion -->
-    <AndroidAsset Include="$(MonoAndroidAssetsPrefix)\**\*" Exclude="$(MonoAndroidAssetsPrefix)\**\.*\**" />
-  </ItemGroup>
 </Project>

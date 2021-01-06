@@ -1,0 +1,3 @@
+<Project>
+  <Import Condition=" $(TargetFramework.StartsWith('monoandroid')) " Project="Xamarin.Android.Legacy.targets" />
+</Project>
