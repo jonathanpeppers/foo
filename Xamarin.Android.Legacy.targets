@@ -5,7 +5,7 @@
     <MSBuildExtensionsPath>$(VSINSTALLDIR)MSBuild/Xamarin/Android/</MSBuildExtensionsPath>
   </PropertyGroup>
   <PropertyGroup Condition=" $([MSBuild]::IsOSPlatform ('osx')) ">
-    <XamarinAndroidInstallPath Condition=" '$(XamarinAndroidInstallPath) == '' ">/Library/Frameworks/Xamarin.Android.framework/Versions/Current/lib/</XamarinAndroidInstallPath>
+    <XamarinAndroidInstallPath Condition=" '$(XamarinAndroidInstallPath)' == '' ">/Library/Frameworks/Xamarin.Android.framework/Versions/Current/lib/</XamarinAndroidInstallPath>
     <TargetFrameworkRootPath>$(XamarinAndroidInstallPath)xbuild-frameworks/</TargetFrameworkRootPath>
     <MSBuildExtensionsPath>$(XamarinAndroidInstallPath)xbuild/Xamarin/Android/</MSBuildExtensionsPath>
   </PropertyGroup>
